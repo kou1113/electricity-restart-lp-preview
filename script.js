@@ -143,7 +143,7 @@ if (areaSummaryHeading) areaSummaryHeading.textContent = `${activeArea.name}å…¨å
 if (areaList) {
   areaList.innerHTML = activeArea.areas.map((area) => {
     const lengthClass = area.length >= 30 ? 'is-wide' : area.length >= 16 ? 'is-medium' : '';
-    return `<li class="${lengthClass}">${area}</li>`;
+    return `<li class="${lengthClass}"><span>${area}</span></li>`;
   }).join('');
 }
 if (areaFaq) {
