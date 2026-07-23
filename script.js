@@ -26,7 +26,8 @@ document.getElementById('contact-form')?.addEventListener('submit', (event) => {
 });
 
 const cancelModal = document.getElementById('cancel-guide');
-const modalOpenButton = document.querySelector('.modal-open');
+const modalOpenButtons = document.querySelectorAll('.modal-open');
+let lastModalOpenButton = null;
 const modalCloseButtons = cancelModal?.querySelectorAll('[data-modal-close]');
 
 const closeCancelModal = () => {
@@ -34,16 +35,17 @@ const closeCancelModal = () => {
   cancelModal.classList.remove('is-open');
   cancelModal.setAttribute('aria-hidden', 'true');
   document.body.classList.remove('modal-active');
-  modalOpenButton?.focus();
+  lastModalOpenButton?.focus();
 };
 
-modalOpenButton?.addEventListener('click', () => {
-  if (!cancelModal) return;
-  cancelModal.classList.add('is-open');
-  cancelModal.setAttribute('aria-hidden', 'false');
-  document.body.classList.add('modal-active');
-  cancelModal.querySelector('.cancel-modal-close')?.focus();
-});
+modalOpenButtons.forEach((button) => button.addEventListener('click', () => {
+    if (!cancelModal) return;
+    lastModalOpenButton = button;
+    cancelModal.classList.add('is-open');
+    cancelModal.setAttribute('aria-hidden', 'false');
+    document.body.classList.add('modal-active');
+    cancelModal.querySelector('.cancel-modal-close')?.focus();
+  }));
 
 modalCloseButtons?.forEach((button) => button.addEventListener('click', closeCancelModal));
 document.addEventListener('keydown', (event) => {

@@ -5,66 +5,74 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="description" content="電気が止まってしまったときの相談窓口です。状況の確認から電力会社への申し込みまで、電気の開通に必要な手続きをサポートします。">
   <title>電気が止まってしまったときの開通サポート｜電気サポート窓口</title>
-  <link rel="stylesheet" href="styles.css?v=20260721-logo-3">
+  <link rel="stylesheet" href="styles.css?v=20260723-reference-layout-2">
 </head>
 <body>
-  <div class="notice-bar">当窓口は電力会社・送配電事業者の公式窓口ではありません</div>
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="brand" href="#top" aria-label="電気サポート窓口 トップへ"><img class="brand-mark" src="images/electricity-support-logo.svg" alt=""><span class="brand-copy"><b><em>電気</em><strong>サポート窓口</strong></b><small>ELECTRICITY SUPPORT DESK</small></span></a>
-      <div class="header-contact"><small>電話受付 10:00〜19:00</small><a href="tel:0120911694">0120-911-694</a></div>
-      <a class="header-button" href="#form">無料で相談する</a>
+  <nav class="area-tabs" aria-label="電力エリアを選択">
+    <div class="container area-tabs-inner">
+      <span class="area-tabs-label">電力エリア</span>
+      <div class="area-tabs-scroll">
+        <span class="area-tab is-pending">北海道電力エリア</span><span class="area-tab is-pending">東北電力エリア</span><a class="area-tab is-current" href="#top" aria-current="page">東京電力エリア</a><span class="area-tab is-pending">北陸電力エリア</span><span class="area-tab is-pending">中部電力エリア</span><span class="area-tab is-pending">関西電力エリア</span><span class="area-tab is-pending">中国電力エリア</span><span class="area-tab is-pending">四国電力エリア</span><span class="area-tab is-pending">九州電力エリア</span>
+      </div>
     </div>
-  </header>
+  </nav>
+  <div class="notice-bar">※当サイト「電気サポート窓口」は新電力の紹介を含むサービスサイトです。弊社は取次店であり電力事業者ではありません。</div>
 
   <main id="top">
     <section class="hero">
       <div class="container hero-grid">
         <div class="hero-copy">
-          <p class="target-label">電気が止まってしまったら</p>
-          <h1><span>電気の開通まで、</span><em><span>しっかりサポート。</span></em></h1>
-          <p class="hero-lead">何から手続きすればよいかわからなくても大丈夫。状況を確認し、開通に必要な手続きをわかりやすくご案内します。</p>
-          <div class="key-message"><b>まずはご相談ください</b><span>現在の状況を一緒に確認します。</span></div>
+          <div class="service-labels"><strong>東京電力エリア</strong><span>電気サポート窓口</span></div>
+          <h1>東京電力エリア</h1>
+          <h2>電気の引っ越し・開始手続き</h2>
+          <p class="hero-lead">東京都、神奈川県、埼玉県、千葉県、栃木県、群馬県、茨城県、山梨県、<br>静岡県（富士川以東）エリアにて電気のご案内をさせていただいております</p>
           <div class="hero-actions">
-            <a class="primary-button" href="tel:0120911694"><small>電気が止まった・使えない方へ</small><strong>すぐに電気を使いたい</strong><span>電話で問い合わせ</span></a>
-            <button class="secondary-button modal-open" type="button" aria-haspopup="dialog" aria-controls="cancel-guide"><small>契約を終了したい方へ</small><strong>解約したい</strong></button>
+            <a class="start-button" href="tel:0120186556"><strong>電話で開始／再開手続き</strong><small>受付時間 10:00-19:00</small></a>
+            <a class="web-button" href="#form"><strong>WEBで開始／再開手続き</strong><small>24時間対応</small></a>
+            <a class="utility-button" href="https://www.tepco.co.jp/ep/support/index-j.html" target="_blank" rel="noopener noreferrer"><strong>解約のみ・停電などその他</strong><small>解約、地域停電、契約内容の確認など</small></a>
           </div>
-          <p class="same-day-note"><b>地域や受付時間によっては、<br class="mobile-only">即日開通できる場合があります</b><span>開通日時は設備状況や契約先の審査などにより異なります。</span></p>
-          <p class="small-note">※相談・申し込み受付は無料です。開通日時や審査結果を保証するものではありません。</p>
+          <p class="completion-note">書類の記入や印鑑は不要です。<br>電話のみで開始手続きが完結できます。</p>
         </div>
-        <aside class="hero-panel" aria-label="この窓口でできること">
-          <p class="panel-kicker">電気を使えるようにするために</p>
-          <h2>開通に向けて<br>一緒に進めます</h2>
-          <ul><li><span>✓</span><p><b>現在の状況を確認</b><small>電気が使えない理由を整理</small></p></li><li><span>✓</span><p><b>申し込み先をご案内</b><small>住所・条件に合う電力会社を確認</small></p></li><li><span>✓</span><p><b>開通手続きをサポート</b><small>条件をご説明して申し込みへ</small></p></li></ul>
-        </aside>
       </div>
     </section>
 
-    <section class="section steps" id="procedure">
-      <div class="container">
-        <div class="section-title"><span>電気が止まってしまったら</span><h2>開通に向けて、<br class="mobile-only">この3つを確認します</h2><p>ご自身ですべて判断する必要はありません。わからない部分は窓口で一緒に確認します。</p></div>
-        <ol class="step-grid">
-          <li><span>1</span><div><h3>停止か、解約済みか確認</h3><p>請求書や通知書を確認します。送電停止だけなら、現在の契約先への支払い・再開連絡が必要です。</p></div></li>
-          <li><span>2</span><div><h3>以前の電力会社へ確認</h3><p>未払い料金や必要な手続きについて、以前の契約先へ確認します。</p></div></li>
-          <li><span>3</span><div><h3>新しい電力会社へ申し込む</h3><p>契約が終了している場合は、新たな小売電気事業者との契約手続きを進めます。</p></div></li>
+    <section class="area-summary" aria-labelledby="area-summary-title">
+      <div class="container area-summary-inner">
+        <div><h2 id="area-summary-title">東京電力エリア全域で対応しています</h2></div>
+        <ul><li>東京都</li><li>神奈川県</li><li>埼玉県</li><li>千葉県</li><li>茨城県</li><li>栃木県</li><li>群馬県</li><li>山梨県</li><li>静岡県（富士川以東）</li></ul>
+      </div>
+    </section>
+
+    <section class="procedure-flow" id="procedure">
+      <div class="container procedure-shell">
+        <h2>電気開通まで</h2>
+        <ol class="procedure-list">
+          <li>
+            <div class="procedure-image procedure-image-phone"><span>STEP 1</span><strong>電話またはWEBから<br>再契約の申し込み</strong></div>
+            <div class="procedure-copy"><h3>電話またはWEBから再契約の申し込み</h3><p>電気の再開をご希望の方は、電話またはWEBフォームからお申し込みください。</p><p>東京電力エリアにお住まいのお客様は、電気とガスを同時に再契約できる場合がございます。</p><p>再契約手続きの際には、以下の情報をご準備いただくとスムーズにご案内できます。</p><ul><li>ご契約されるご住所</li><li>電気のご利用再開希望日</li><li>お支払方法（口座振替、クレジットカードなど）</li><li>ご連絡先電話番号およびメールアドレス</li></ul><p class="procedure-note">※未払いがある場合は、再契約の前にご精算が必要な場合がありますので、あらかじめご了承ください。</p><a href="tel:0120186556"><b>電話で開始／再開手続き</b><small>受付時間 10:00-19:00</small></a></div>
+          </li>
+          <li>
+            <div class="procedure-image procedure-image-guide"><span>STEP 2</span><strong>契約情報確認と<br>お支払登録</strong></div>
+            <div class="procedure-copy"><h3>契約情報確認とお支払登録</h3><p>お申し込み後、契約情報やお支払状況などを確認させていただきます。</p><p class="procedure-note">※状況により、再契約をお受けできない場合もございますので、あらかじめご了承ください。</p></div>
+          </li>
+          <li>
+            <div class="procedure-image procedure-image-complete"><span>STEP 3</span><strong>電気の再開<br>（再送電）</strong></div>
+            <div class="procedure-copy"><h3>電気の再開（再送電）</h3><p>再契約が完了し、必要なご精算が確認でき次第、電気の再開手続きが行われます。</p><p>手続き完了後から再送電までは、数時間かかります。</p><p class="procedure-note">※時間帯によっては、当日開通ができない場合がございます。</p></div>
+          </li>
         </ol>
-        <div class="support-band"><div><small>「どうしたらいい？」の段階で大丈夫です</small><h3>電気の開通に必要な手続きを、私たちがサポートします。</h3></div><a href="#form">今すぐ無料相談 <span>→</span></a></div>
       </div>
-    </section>
-
-    <section class="section gray" id="important">
-      <div class="container compact-grid">
-        <div class="section-title align-left"><span>知っておきたいこと</span><h2>状況に合った手続きを<br>確認しましょう</h2></div>
-        <div class="important-copy"><p>電気が止まった理由や現在の契約状況によって、必要な手続きは異なります。送電停止の場合は現在の契約先への連絡、契約が終了している場合は再契約または新しい電力会社への申し込みを行います。</p><p>どの手続きが必要かわからないときは、窓口で状況を一緒に整理します。住所やご希望に合う申し込み先もご案内します。</p><div class="plain-note"><b>確認から申し込みまで、順番に進めれば大丈夫です。</b><span>電気の開通に必要な手続きをわかりやすくサポートします。</span></div></div>
-      </div>
+      <div class="container procedure-cta"><a href="tel:0120186556"><small>電気サポート窓口（通話無料）</small><b>☎ 0120-186-556</b></a><a href="#form"><small>24時間受付！</small><b>WEBでお申し込み</b></a></div>
     </section>
 
     <section class="section faq" id="faq">
       <div class="container narrow">
-        <div class="section-title"><span>よくある質問</span><h2>相談前のよくある疑問</h2></div>
-        <details open><summary>今日中に電気を使えますか？</summary><p>受付時刻、地域、設備状況、契約先の審査などにより異なります。当日開通できる場合もありますが確約はできません。お急ぎの場合は電話でご相談ください。</p></details>
-        <details><summary>以前の会社へ料金を支払えば再開しますか？</summary><p>送電停止のみなら支払い後の再開手続き、すでに解約済みなら再契約または別会社との新規契約が必要です。まず以前の契約先へ契約状態をご確認ください。</p></details>
-        <details><summary>停電や設備故障も相談できますか？</summary><p>近隣一帯の停電は地域の送配電事業者へ、焦げたにおい・煙・火花などがある場合は機器に触れず消防等の緊急窓口へご連絡ください。</p></details>
+        <div class="section-title"><span>FAQ</span><h2>よくあるご質問</h2></div>
+        <details open><summary>手続きにはどれくらい時間がかかりますか？</summary><p>内容にもよりますが、最短で5分程度のお電話で開始／再契約の手続きが完了します。</p></details>
+        <details><summary>当日のお手続きは可能ですか？</summary><p>即日開通可能ですが、建物状況や時間帯によります。詳しくは <a href="tel:0120186556">0120-186-556</a> までご連絡ください。</p></details>
+        <details><summary>土日祝日でも電気の開始はできますか？</summary><p>可能です。ご利用状況や時間帯によりますので、一度お問い合わせください。受付時間は10:00-19:00（不定休）、WEBは24時間受け付けています。</p></details>
+        <details><summary>東京電力エリアとはどこですか？</summary><p>東京都、神奈川県、埼玉県、千葉県、栃木県、群馬県、茨城県、山梨県、静岡県（富士川以東）です。</p></details>
+        <details><summary>電気を再開・再契約したい場合はどうすればよいですか？</summary><p>再通電については契約状況によってお手続き方法が異なります。詳しくは <a href="tel:0120186556">0120-186-556</a> までお問い合わせください。</p></details>
+        <details><summary>電気料金の未払いにより電気が止まってしまった場合は？</summary><p>強制解約になっている場合もございます。詳しくは <a href="tel:0120186556">0120-186-556</a> までお問い合わせください。</p></details>
       </div>
     </section>
 
@@ -94,7 +102,7 @@
   </main>
 
   <footer><p>Copyright © 電気サポート窓口 All Rights Reserved.</p></footer>
-  <div class="sticky-cta"><a href="tel:0120911694"><small>受付 10:00〜19:00</small><b>電話で無料相談</b></a><a href="#form"><small>24時間受付</small><b>WEBで無料相談</b></a></div>
+  <div class="sticky-cta"><a href="tel:0120186556"><small>受付 10:00〜19:00</small><b>電話で無料相談</b></a><a href="#form"><small>24時間受付</small><b>WEBで無料相談</b></a></div>
   <div class="cancel-modal" id="cancel-guide" role="dialog" aria-modal="true" aria-labelledby="cancel-guide-title" aria-hidden="true">
     <div class="cancel-modal-backdrop" data-modal-close></div>
     <div class="cancel-modal-card" role="document">
