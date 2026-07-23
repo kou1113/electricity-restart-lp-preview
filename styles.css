@@ -27,6 +27,7 @@ h1,h2,h3,.hero-lead,.key-message span,.section-title p,.important-copy p,.cancel
 @media(max-width:760px){.mobile-only{display:block}.key-message{display:block;text-align:center}.key-message b,.key-message span{display:block}.key-message span{margin-top:5px}.same-day-note{padding:11px 12px;display:block;text-align:center}.same-day-note b,.same-day-note span{display:block}.same-day-note span{margin-top:5px;font-size:9px}.steps .section-title h2{font-size:24px;line-height:1.5}.steps .section-title p{max-width:310px}}
 @media(max-width:760px){.eligibility-note{margin:-5px 0 18px;padding:9px 10px;font-size:9px}}
 @media(max-width:760px){.optional-address-heading{margin:5px 0 16px;padding:11px 12px}.optional-address-heading b{font-size:11px}}
+.thanks-main{min-height:calc(100vh - 160px);display:grid;place-items:center}.thanks-card{text-align:center}.thanks-icon{width:70px;height:70px;margin:0 auto 20px;display:grid;place-items:center;color:#fff;background:var(--red);border-radius:50%;font-size:34px;font-weight:900}.thanks-card>p{max-width:590px;margin:0 auto 15px}.thanks-note{color:var(--muted);font-size:12px!important}.thanks-button{margin-top:18px;padding:13px 25px;display:inline-block;color:#fff;background:var(--red);border-radius:7px;font-size:14px;font-weight:900;text-decoration:none}
 @media(max-width:360px){.primary-button strong{font-size:15px}.hero-actions small{font-size:8px}.sticky-cta b{font-size:11px}}
 
 /* White and red visual direction */

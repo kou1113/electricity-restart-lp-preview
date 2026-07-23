@@ -22,7 +22,7 @@ document.getElementById('contact-form')?.addEventListener('submit', (event) => {
     event.currentTarget.reportValidity();
     return;
   }
-  alert('現在はデザイン確認用です。公開時に送信処理を接続します。');
+  window.location.href = 'thanks.html';
 });
 
 const cancelModal = document.getElementById('cancel-guide');
