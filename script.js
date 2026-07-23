@@ -140,7 +140,12 @@ if (serviceAreaLabel) serviceAreaLabel.textContent = activeArea.name;
 if (areaHeading) areaHeading.textContent = activeArea.name;
 if (areaDescription) areaDescription.textContent = activeArea.description;
 if (areaSummaryHeading) areaSummaryHeading.textContent = `${activeArea.name}全域で対応しています`;
-if (areaList) areaList.innerHTML = activeArea.areas.map((area) => `<li>${area}</li>`).join('');
+if (areaList) {
+  areaList.innerHTML = activeArea.areas.map((area) => {
+    const lengthClass = area.length >= 30 ? 'is-wide' : area.length >= 16 ? 'is-medium' : '';
+    return `<li class="${lengthClass}">${area}</li>`;
+  }).join('');
+}
 if (areaFaq) {
   areaFaq.querySelector('summary').textContent = `${activeArea.name}とはどこですか？`;
   areaFaq.querySelector('p').textContent = activeArea.faq;

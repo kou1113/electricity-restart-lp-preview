@@ -107,3 +107,10 @@ body{padding-bottom:72px;color:#292929;background:#fff;line-height:1.7}.site-hea
 @media(max-width:760px){.form-status-note{margin-bottom:18px;padding:12px 13px;font-size:10px}}
 .stopped-electricity-notice{padding:34px 0 0;background:#fff}.stopped-electricity-notice .container{padding:28px 32px;display:grid;grid-template-columns:auto 1fr auto;gap:28px;align-items:center;background:#fff2f2;border:2px solid #e9b8ba;border-left:9px solid var(--ref-red);box-shadow:0 8px 22px rgba(135,35,39,.08)}.stopped-electricity-notice strong{color:var(--ref-red);font-size:20px;line-height:1.45}.stopped-electricity-notice p{margin:0;font-size:14px;font-weight:700}.stopped-electricity-notice a{padding:13px 22px;color:#fff;background:var(--ref-red);border-radius:4px;font-size:18px;font-weight:900;text-decoration:none;white-space:nowrap}
 @media(max-width:760px){.stopped-electricity-notice{padding-top:22px}.stopped-electricity-notice .container{padding:22px 17px;display:block;text-align:center;border-left-width:7px}.stopped-electricity-notice strong{font-size:18px}.stopped-electricity-notice p{margin:10px 0 15px;font-size:12px}.stopped-electricity-notice a{padding:12px 16px;display:block;font-size:17px}}
+
+/* Balanced Japanese line wrapping for service-area names */
+.area-summary ul{grid-template-columns:repeat(3,minmax(0,1fr));align-items:start}
+.area-summary li{min-width:0;line-height:1.75;word-break:auto-phrase;overflow-wrap:anywhere;line-break:strict;text-wrap:pretty}
+.area-summary li.is-medium{grid-column:span 2}
+.area-summary li.is-wide{grid-column:1/-1}
+@media(max-width:760px){.area-summary ul{grid-template-columns:1fr;gap:8px}.area-summary li,.area-summary li.is-medium,.area-summary li.is-wide{grid-column:1;word-break:normal;overflow-wrap:anywhere;text-wrap:wrap}}
