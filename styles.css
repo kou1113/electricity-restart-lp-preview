@@ -115,4 +115,5 @@ body{padding-bottom:72px;color:#292929;background:#fff;line-height:1.7}.site-hea
 .area-summary li>span{min-width:0;display:block;flex:1;color:#292929!important;font-size:inherit;font-weight:inherit;word-break:auto-phrase;overflow-wrap:anywhere;line-break:strict;text-wrap:pretty}
 .area-summary li.is-medium{grid-column:span 2}
 .area-summary li.is-wide{grid-column:1/-1}
+body[data-area="chubu"] .area-summary li.is-medium{grid-column:1/-1}
 @media(max-width:760px){.area-summary ul{grid-template-columns:1fr;gap:8px}.area-summary li,.area-summary li.is-medium,.area-summary li.is-wide{grid-column:1}.area-summary li>span{word-break:normal;overflow-wrap:anywhere;text-wrap:wrap}}
