@@ -100,3 +100,6 @@ body{padding-bottom:72px;color:#292929;background:#fff;line-height:1.7}.site-hea
 
 /* Distinguish the fixed WEB action from the phone action */
 .sticky-cta a:last-child{color:var(--ref-red);background:#fff;border-left:1px solid #e7caca}
+.form-disclaimer{margin:0 0 25px;padding:13px 16px;color:#684d4d;background:#fff5f5;border:1px solid #efcece;font-size:11px;text-align:center}
+.sticky-cta a:first-child b{font-size:12px}
+@media(max-width:760px){.form-disclaimer{margin-bottom:20px;padding:11px 12px;font-size:9px}.sticky-cta a:first-child b{font-size:10px}}
