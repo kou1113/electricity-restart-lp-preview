@@ -116,4 +116,25 @@ body{padding-bottom:72px;color:#292929;background:#fff;line-height:1.7}.site-hea
 .area-summary li.is-medium{grid-column:span 2}
 .area-summary li.is-wide{grid-column:1/-1}
 body[data-area="chubu"] .area-summary li.is-medium{grid-column:1/-1}
+body[data-area="hokkaido"] .area-summary li{grid-column:1/-1;justify-content:center}
+body[data-area="tohoku"] .area-summary ul,
+body[data-area="kyushu"] .area-summary ul{grid-template-columns:repeat(6,minmax(0,1fr))}
+body[data-area="tohoku"] .area-summary li,
+body[data-area="kyushu"] .area-summary li{grid-column:span 2}
+body[data-area="tohoku"] .area-summary li:nth-child(n+4),
+body[data-area="kyushu"] .area-summary li:nth-child(n+4){grid-column:span 3}
+body[data-area="kansai"] .area-summary ul{grid-template-columns:repeat(6,minmax(0,1fr))}
+body[data-area="kansai"] .area-summary li{grid-column:span 2}
+body[data-area="kansai"] .area-summary li:nth-child(7),
+body[data-area="kansai"] .area-summary li:nth-child(8){grid-column:span 3}
+body[data-area="kansai"] .area-summary li:nth-child(9){grid-column:1/-1}
+body[data-area="shikoku"] .area-summary ul{grid-template-columns:repeat(2,minmax(0,1fr))}
+body[data-area="shikoku"] .area-summary li{grid-column:span 1}
+body[data-area="shikoku"] .area-summary li:nth-child(n+3){grid-column:1/-1}
 @media(max-width:760px){.area-summary ul{grid-template-columns:1fr;gap:8px}.area-summary li,.area-summary li.is-medium,.area-summary li.is-wide{grid-column:1}.area-summary li>span{word-break:normal;overflow-wrap:anywhere;text-wrap:wrap}}
+@media(max-width:760px){
+  body[data-area] .area-summary ul{grid-template-columns:1fr}
+  body[data-area] .area-summary li,
+  body[data-area] .area-summary li:nth-child(n){grid-column:1/-1}
+  body[data-area="hokkaido"] .area-summary li{justify-content:flex-start}
+}
