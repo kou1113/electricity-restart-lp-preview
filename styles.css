@@ -99,4 +99,4 @@ body{padding-bottom:72px;color:#292929;background:#fff;line-height:1.7}.site-hea
 .procedure-image-complete{background-image:url('images/procedure-step3-power-on.png');background-position:center}
 
 /* Distinguish the fixed WEB action from the phone action */
-.sticky-cta a:last-child{color:#fff;background:var(--ref-gray);border-left:1px solid #fff}
+.sticky-cta a:last-child{color:var(--ref-red);background:#fff;border-left:1px solid #e7caca}
