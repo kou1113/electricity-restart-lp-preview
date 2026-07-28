@@ -169,3 +169,25 @@ body.sticky-cta-visible .sticky-cta{visibility:visible;transform:translateY(0)}
 .operator-info{padding:24px 0 20px}
 .operator-info nav{margin-top:10px}
 @media(max-width:760px){.operator-info{padding:20px 0 16px}.operator-info nav{margin-top:8px}}
+
+/* Mobile CTA legibility: keep all three hero actions equal and easy to read */
+@media(max-width:760px){
+  .hero-actions>.start-button,
+  .hero-actions>.web-button,
+  .hero-actions>.utility-button{
+    min-height:68px;
+    padding:10px 14px;
+  }
+  .hero-actions strong,
+  .hero-actions .utility-button strong{font-size:17px;line-height:1.35}
+  .hero-actions small{font-size:10px;line-height:1.45}
+  .sticky-cta b,
+  .sticky-cta a:first-child b{font-size:14px}
+  .sticky-cta small{font-size:9px}
+}
+@media(max-width:360px){
+  .hero-actions strong,
+  .hero-actions .utility-button strong{font-size:16px}
+  .sticky-cta b,
+  .sticky-cta a:first-child b{font-size:12px}
+}
