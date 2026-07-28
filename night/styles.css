@@ -246,6 +246,7 @@ body[data-area="chugoku"] .area-summary li.is-wide{grid-column:1/-1}
 .night-coverage ul{margin:24px 0 0;padding:0;grid-template-columns:repeat(3,1fr);gap:0;background:#fff;border-top:1px solid #e8dada;list-style:none}
 .night-coverage li{position:relative;padding:13px 10px 13px 28px;background:#fff;border:0;border-bottom:1px solid #e8dada;border-radius:0;text-align:left;font-size:13px}
 .night-coverage li::before{content:"●";position:absolute;left:8px;color:var(--ref-red);font-size:8px}
+.coverage-areas{margin:22px 0 0;padding:18px 0;border-top:1px solid #e8dada;border-bottom:1px solid #e8dada;font-size:14px;font-weight:700;line-height:2}
 .coverage-note{margin:12px 0 0;color:#666;font-size:11px}
 .night-flow{padding:50px 0}
 .night-flow-list{margin-top:25px;display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid #ddd;border-bottom:1px solid #ddd}
@@ -267,6 +268,7 @@ body[data-area="chugoku"] .area-summary li.is-wide{grid-column:1/-1}
   .night-response-card{text-align:left}
   .night-primary-cta{width:100%}
   .night-section-heading h2{font-size:21px}
+  .coverage-areas{padding:14px 0;font-size:12px;line-height:1.9}
   .night-coverage ul{grid-template-columns:1fr 1fr}
   .night-coverage li{font-size:11px}
   .night-flow-list{grid-template-columns:1fr}
