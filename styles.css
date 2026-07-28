@@ -139,3 +139,23 @@ body[data-area="chugoku"] .area-summary li.is-wide{grid-column:1/-1}
   .area-summary h2{font-size:18px;line-height:1.45}
   .area-summary h2 span{display:block}
 }
+
+/* Pattern 1 manager review: compact first view */
+.stopped-electricity-call{grid-template-columns:auto minmax(0,1fr)}
+.stopped-electricity-call>span{display:none}
+@media(max-width:760px){
+  .notice-bar{padding:10px 14px 9px;line-height:1.55}
+  .hero{padding-bottom:12px}
+  .service-labels{padding-bottom:8px}
+  .service-labels strong,.service-labels span{padding:7px 8px;font-size:10px}
+  .hero h1{margin:6px 0 6px;padding-bottom:6px;font-size:22px;line-height:1.35}
+  .hero h2{margin:10px 0 5px;font-size:17px}
+  .stopped-electricity-notice{padding:5px 0 10px}
+  .stopped-electricity-call{padding:10px 12px;display:grid;grid-template-columns:1fr;gap:2px;text-align:center;box-shadow:0 4px 0 #98151c,0 7px 14px rgba(135,35,39,.14)}
+  .stopped-electricity-call strong{font-size:15px}
+  .stopped-electricity-call p{margin:0;font-size:10px;line-height:1.45}
+  .hero-actions a,.hero-actions button,.action-row a,.hero-actions .utility-button{min-height:54px;margin-bottom:4px;padding:7px 12px}
+  .hero-actions strong,.action-row strong,.utility-button strong{font-size:14px}
+  .hero-actions small{font-size:8px}
+  .completion-note{display:none}
+}
