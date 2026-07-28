@@ -275,3 +275,48 @@ body[data-area="chugoku"] .area-summary li.is-wide{grid-column:1/-1}
   .night-flow-list>li{padding:20px 16px;border-right:0;border-bottom:1px solid #ddd}
   .night-flow-list>li:last-child{border-bottom:0}
 }
+
+/* Larger supporting text for senior-friendly readability */
+.night-lp .preview-bar{font-size:12px}
+.night-lp .notice-bar{font-size:13px;line-height:1.65}
+.night-lp .service-labels span{font-size:15px}
+.night-lp .night-hero-lead{font-size:17px}
+.night-lp .night-response-card strong{font-size:19px}
+.night-lp .night-response-card p{font-size:15px;line-height:1.7}
+.night-lp .night-primary-cta small{font-size:13px}
+.night-lp .night-section-heading p{font-size:15px}
+.night-lp .coverage-areas{font-size:16px}
+.night-lp .coverage-note{font-size:13px}
+.night-lp .night-flow-list p{font-size:15px;line-height:1.75}
+.night-lp .procedure-note{font-size:13px}
+.night-lp .faq summary{font-size:16px}
+.night-lp .faq details p{font-size:15px;line-height:1.8}
+.night-lp .section-title p{font-size:15px}
+.night-lp .form-status-note{font-size:14px}
+.night-lp .contact-form label>span{font-size:15px}
+.night-lp .contact-form i{font-size:11px}
+.night-lp .contact-form input{font-size:16px}
+.night-lp .optional-address-heading b{font-size:14px}
+.night-lp .optional-address-heading span{font-size:13px}
+.night-lp .privacy span{font-size:13px!important}
+.night-lp .contact-form button small{font-size:12px}
+.night-lp .operator-info p{font-size:13px;line-height:1.7}
+.night-lp .operator-info nav{font-size:13px}
+.night-lp footer{font-size:12px}
+.night-lp .sticky-cta small{font-size:11px}
+.night-lp .sticky-cta b{font-size:15px}
+@media(max-width:760px){
+  .night-lp .preview-bar{font-size:11px}
+  .night-lp .notice-bar{font-size:12px}
+  .night-lp .service-labels span{font-size:13px}
+  .night-lp .night-hero-lead{font-size:15px}
+  .night-lp .night-response-card p{font-size:14px}
+  .night-lp .night-section-heading p{font-size:14px}
+  .night-lp .coverage-areas{font-size:14px}
+  .night-lp .coverage-note{font-size:12px}
+  .night-lp .night-flow-list p{font-size:14px}
+  .night-lp .faq summary{font-size:15px}
+  .night-lp .faq details p{font-size:14px}
+  .night-lp .section-title p{font-size:14px}
+  .night-lp .sticky-cta b{font-size:14px}
+}
