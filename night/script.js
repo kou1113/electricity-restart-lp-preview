@@ -18,16 +18,15 @@ document.getElementById('contact-form')?.addEventListener('submit', (event) => {
   window.location.href = 'thanks.html';
 });
 
-const coverageSection = document.querySelector('.night-coverage');
 const stickyCta = document.querySelector('.night-sticky');
 
-if (coverageSection && stickyCta) {
+if (stickyCta) {
   let ticking = false;
 
   const updateStickyCta = () => {
-    const hasPassedCoverage = coverageSection.getBoundingClientRect().bottom <= 0;
-    stickyCta.classList.toggle('is-visible', hasPassedCoverage);
-    stickyCta.setAttribute('aria-hidden', String(!hasPassedCoverage));
+    const hasStartedScrolling = window.scrollY > 8;
+    stickyCta.classList.toggle('is-visible', hasStartedScrolling);
+    stickyCta.setAttribute('aria-hidden', String(!hasStartedScrolling));
     ticking = false;
   };
 
