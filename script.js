@@ -9,6 +9,26 @@ document.querySelectorAll('details').forEach((item) => {
   });
 });
 
+const stickyCta = document.querySelector('.sticky-cta');
+const stickyCtaStart = document.querySelector('.area-summary');
+let stickyCtaTicking = false;
+
+const updateStickyCta = () => {
+  stickyCtaTicking = false;
+  if (!stickyCta || !stickyCtaStart) return;
+  document.body.classList.toggle('sticky-cta-visible', window.scrollY >= stickyCtaStart.offsetTop);
+};
+
+const requestStickyCtaUpdate = () => {
+  if (stickyCtaTicking) return;
+  stickyCtaTicking = true;
+  window.requestAnimationFrame(updateStickyCta);
+};
+
+window.addEventListener('scroll', requestStickyCtaUpdate, { passive: true });
+window.addEventListener('resize', requestStickyCtaUpdate);
+updateStickyCta();
+
 const startDate = document.querySelector('[name="start_date"]');
 if (startDate) {
   const now = new Date();
