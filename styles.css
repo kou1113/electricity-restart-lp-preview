@@ -179,15 +179,16 @@ body.sticky-cta-visible .sticky-cta{visibility:visible;transform:translateY(0)}
     padding:10px 14px;
   }
   .hero-actions strong,
-  .hero-actions .utility-button strong{font-size:17px;line-height:1.35}
-  .hero-actions small{font-size:10px;line-height:1.45}
+  .hero-actions .utility-button strong{font-size:18px;line-height:1.35;letter-spacing:.015em}
+  .hero-actions small{margin-top:2px;font-size:11px;line-height:1.45;letter-spacing:.02em}
   .sticky-cta b,
-  .sticky-cta a:first-child b{font-size:14px}
-  .sticky-cta small{font-size:9px}
+  .sticky-cta a:first-child b{font-size:15px;letter-spacing:.01em}
+  .sticky-cta small{font-size:10px;letter-spacing:.02em}
 }
 @media(max-width:360px){
   .hero-actions strong,
-  .hero-actions .utility-button strong{font-size:16px}
+  .hero-actions .utility-button strong{font-size:17px}
   .sticky-cta b,
-  .sticky-cta a:first-child b{font-size:12px}
+  .sticky-cta a:first-child b{font-size:13px}
+  .sticky-cta small{font-size:9px}
 }
