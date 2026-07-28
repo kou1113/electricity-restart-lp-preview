@@ -175,20 +175,21 @@ body.sticky-cta-visible .sticky-cta{visibility:visible;transform:translateY(0)}
   .hero-actions>.start-button,
   .hero-actions>.web-button,
   .hero-actions>.utility-button{
-    min-height:68px;
-    padding:10px 14px;
+    min-height:78px;
+    padding:12px 14px;
   }
   .hero-actions strong,
-  .hero-actions .utility-button strong{font-size:18px;line-height:1.35;letter-spacing:.015em}
-  .hero-actions small{margin-top:2px;font-size:11px;line-height:1.45;letter-spacing:.02em}
+  .hero-actions .utility-button strong{font-size:20px;line-height:1.3;letter-spacing:.02em}
+  .hero-actions small{margin-top:3px;font-size:13px;line-height:1.4;letter-spacing:.025em}
   .sticky-cta b,
-  .sticky-cta a:first-child b{font-size:15px;letter-spacing:.01em}
-  .sticky-cta small{font-size:10px;letter-spacing:.02em}
+  .sticky-cta a:first-child b{font-size:16px;letter-spacing:.01em}
+  .sticky-cta small{font-size:11px;letter-spacing:.02em}
 }
 @media(max-width:360px){
   .hero-actions strong,
-  .hero-actions .utility-button strong{font-size:17px}
+  .hero-actions .utility-button strong{font-size:18px}
+  .hero-actions small{font-size:12px}
   .sticky-cta b,
-  .sticky-cta a:first-child b{font-size:13px}
-  .sticky-cta small{font-size:9px}
+  .sticky-cta a:first-child b{font-size:14px}
+  .sticky-cta small{font-size:10px}
 }
