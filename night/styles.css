@@ -320,3 +320,17 @@ body[data-area="chugoku"] .area-summary li.is-wide{grid-column:1/-1}
   .night-lp .section-title p{font-size:14px}
   .night-lp .sticky-cta b{font-size:14px}
 }
+
+/* Night reception completion page */
+.night-thanks .thanks-card h1{margin-bottom:22px;font-size:34px}
+.night-thanks .thanks-card>p{font-size:16px;line-height:1.9}
+.night-thanks .thanks-note{margin-top:20px!important;padding:15px 18px;color:#684d4d!important;background:#fff5f5;border-left:4px solid var(--red);font-size:14px!important;text-align:left}
+.night-thanks .thanks-followup{font-size:14px!important}
+.night-thanks .thanks-button{font-size:16px}
+@media(max-width:760px){
+  .night-thanks .document-card{padding:34px 20px}
+  .night-thanks .thanks-card h1{font-size:27px}
+  .night-thanks .thanks-card>p{font-size:15px}
+  .night-thanks .thanks-note{padding:13px 14px;font-size:13px!important}
+  .night-thanks .thanks-button{font-size:15px}
+}
